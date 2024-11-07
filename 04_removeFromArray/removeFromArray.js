@@ -1,4 +1,6 @@
-const removeFromArray = function() {
+const removeFromArray = function(sequence, ...itemsToRemove) {
+    sequence = sequence.filter(item => !(itemsToRemove.includes(item)));
+    return sequence;
 };
 
 // Do not edit below this line
